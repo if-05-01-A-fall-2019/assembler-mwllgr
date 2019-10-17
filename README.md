@@ -1,4 +1,4 @@
-### if.05.01 TINF Operting Systems
+### if.05.01 TINF Operating Systems
 
 # Assignment 3: NoBeard Assembler
 ## Objective
