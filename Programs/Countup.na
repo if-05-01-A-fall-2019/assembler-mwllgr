@@ -1,0 +1,42 @@
+"Enter a number:"
+inc 12
+
+# Print "Enter a number: "
+lit 0
+lit 15
+lit 16
+out 2
+
+# Read user input
+la 0 32
+la 0 36
+in 0
+
+# Add 1 to user's input
+la 0 32
+lv 0 32
+lit 1
+add
+sto
+
+# Start looping
+.loop
+lv 0 36
+lit 5
+out 0
+
+# Always add 1
+la 0 36
+lv 0 36
+lit 1
+add
+sto
+
+# Check for end of loop
+lv 0 36
+lv 0 32
+rel 2
+fjmp .loop
+
+# Bye
+halt
