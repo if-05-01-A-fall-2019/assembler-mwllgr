@@ -1,0 +1,53 @@
+"Max points:Achieved points:Result:%"
+inc 12
+
+# Print "Max points: "
+lit 0
+lit 11
+lit 12
+out 2
+
+# Read max points
+la 0 32
+la 0 36
+in 0
+
+# Print "Achieved points: "
+lit 11
+lit 16
+lit 17
+out 2
+
+# Read achieved points
+la 0 36
+la 0 40
+in 0
+
+# Divide reached/max
+la 0 40
+lv 0 36
+lit 100
+mul
+lv 0 32
+div
+sto
+
+# Print "Result: "
+lit 27
+lit 7
+lit 8
+out 2
+
+# Print calculated result
+lv 0 40
+lit 1
+out 0
+
+# Print %
+lit 34
+lit 1
+lit 2
+out 2
+
+# Bye
+halt
