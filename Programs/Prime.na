@@ -1,0 +1,31 @@
+"Enter number:Input restricted to positive numbers!Result:"
+inc 12
+
+# Print "Enter number: "
+lit 0
+lit 13
+lit 14
+out 2
+
+# Read number
+la 0 32
+la 0 36
+in 0
+
+# Check for error
+lv 0 32
+lit 0
+rel 0
+tjmp .error
+fjmp .exit
+
+# Print error
+.error
+lit 13
+lit 37
+lit 38
+out 2
+
+# Bye
+.exit
+halt
